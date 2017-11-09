@@ -8,14 +8,16 @@
     background-color: @nav-theme;
     display: inline-block;
     margin-bottom: 5px;
+    margin-left: 200px;
 
     .border(3px);
     & li {
-        .border(0);
-        margin-right: -4px;
-
+        border-style: solid;
+        border-left: 0;
+        border-top: 0;
+        border-bottom: 0;
         &:last-child {
-            width:60px;
+            border-right:0;
         }
     }
 }
