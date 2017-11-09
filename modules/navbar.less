@@ -1,0 +1,21 @@
+@nav-theme: green;
+
+.border (@radius: 0) {
+    border-radius: @radius;
+    border: 1px solid darken(@nav-theme, 15%);
+}
+.navbar2 {
+    background-color: @nav-theme;
+    display: inline-block;
+    margin-bottom: 5px;
+
+    .border(3px);
+    & li {
+        .border(0);
+        margin-right: -4px;
+
+        &:last-child {
+            width:60px;
+        }
+    }
+}
