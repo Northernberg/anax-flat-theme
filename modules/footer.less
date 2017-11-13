@@ -1,6 +1,17 @@
-
 .footer{
-    border: solid 1px;
+    border-top:1px solid black;
     margin-right: -1px;
-    border-left: 0;
+    background-color: green;
+
+}
+.columns{
+    border-bottom: 1px solid black;
+}
+.footer-column{
+    background-color: green;
+    border-right:1px solid black;
+
+    &:last-child{
+        border-right: 0;
+    }
 }
