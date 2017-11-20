@@ -1,0 +1,147 @@
+@import "typography-font-families.less";
+@import "typography-sizes.less";
+@import "typography-mixins.less";
+@import "typography-defaults.less";
+
+body {
+    .font();
+    .typographyHeadings();
+    .typographyTextElements();
+    .typographyCodeElements();
+    .typographyListElements();
+    .typographyTableElements();
+    .typographyOtherElements();
+//}
+}
+
+.hgrid, .route-typography {
+    background-image: url(../img/horisontal-grid-24.png);
+}
+
+nav div ul a {
+    @height: 48px;
+    .calcMargin(@height);
+    padding-top: (@margin / 2) - 1px!important;
+    padding-bottom: (@margin / 2) - 2px!important;
+}
+
+.flash {
+    @height: 260px;
+    height: 264px;
+    .calcMargin(@height);
+    padding-top: (@margin / 2) - 4px;
+    margin-top: (@margin / 2) - 7px!important;
+}
+
+.site-logo-text-icon img {
+    @height: 40px;
+    .calcMargin(@height);
+    margin-bottom: (@margin / 2)!important;
+}
+
+.site-logo-text a{
+    @height: 500px;
+    .calcMargin(@height);
+    margin-top: (@margin / 2)!important;
+}
+
+.breadcrumb-list {
+    @height: 23px;
+    height: 23px;
+    .calcMargin(@height);
+    margin-top: (@margin / 2) - 7px !important;
+}
+
+h1 {
+    @height: 48px;
+    .calcMargin(@height);
+    margin-top: (@margin / 2)!important;
+    padding-bottom: (@margin / 2)!important;
+}
+
+h2 {
+    @height: 48px;
+    .calcMargin(@height);
+    margin-top: (@margin / 2) - @magicNumber !important;
+    padding-bottom: (@margin / 2) !important;
+}
+
+h3 {
+    @height: 24px;
+    .calcMargin(@height);
+    margin-top: (@margin / 2) - @magicNumber!important;
+}
+
+h6 {
+    @height: 24px;
+    .calcMargin(@height);
+    margin-top: (@margin / 2) - @magicNumber!important;
+}
+
+p {
+    @height: 11px;
+    .calcMargin(@height);
+    margin-top: (@margin / 2) - @magicNumber!important;
+}
+
+.footer {
+    height: 482px;
+}
+
+.rm-small-wrapper {
+    @height: 16px;
+    .calcMargin(@height);
+    margin-top: (@margin / 2)!important;
+}
+
+.byline_img {
+    height: 76px;
+}
+
+//@fontSizeH1: 2.375em;
+//@fontSizeH2: 1.875em;
+//@fontSizeH3: 1.375em;
+//@fontSizeH4: 1.25em;
+//@fontSizeH5: 1em;
+//@fontSizeH6: 0.875em;
+
+//@fontSizeCodeInline:  1.25em;
+//@fontSizeCodeBlock:   1.25em;
+//@lineHeightCodeBlock: 1.6;
+
+//@fontSizeSupSub: 0.75em;
+
+//@fontSizeSmall: 0.875em;
+
+
+//@fontFamilyCourier:         "Courier New", Courier, monospace;
+//@fontFamilyMonospace:       monospace;
+
+// Serif
+
+//@fontFamilyCambria:         Cambria, Georgia, Times, 'Times New Roman', serif;
+//@fontFamilyTimes:           Times, 'Times New Roman', serif;
+//@fontFamilyGaramond:        Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+
+// Sans-serif
+
+//@fontFamilyHelvetica:       Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+//@fontFamilyCalibri:         Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+//@fontFamilyMyriadPro:       MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+//@fontFamilyHelveticaNeue:   "Helvetica Neue", Helvetica, Arial, sans-serif;
+//@fontFamilyArial:           Arial, sans-serif;
+
+
+
+/**
+ * Default font-families
+ */
+
+//@fontFamilyHeadings:  @fontFamilyCambria;
+//@fontFamilyBody:      @fontFamilyCalibri;
+//@fontFamilyCode:      @fontFamilyCourier;
+
+//@colorH1BorderBottom: #666;
+//@colorH2BorderBottom: #999;
+//@borderSizeH1: 1px;
+//@borderSizeH2: 1px;
