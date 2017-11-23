@@ -11,7 +11,7 @@ body {
     .typographyListElements();
     .typographyTableElements();
     .typographyOtherElements();
-//}
+
 }
 
 .hgrid, .route-typography {
@@ -49,7 +49,7 @@ nav div ul a {
     @height: 23px;
     height: 23px;
     .calcMargin(@height);
-    margin-top: (@margin / 2) - 7px !important;
+    margin-top: (@margin / 2) - @magicNumber !important;
 }
 
 h1 {
@@ -57,6 +57,7 @@ h1 {
     .calcMargin(@height);
     margin-top: (@margin / 2)!important;
     padding-bottom: (@margin / 2)!important;
+
 }
 
 h2 {
@@ -71,6 +72,11 @@ h3 {
     .calcMargin(@height);
     margin-top: (@margin / 2) - @magicNumber!important;
 }
+h4 {
+    @height: 24px;
+    .calcMargin(@height);
+    margin-top: (@margin / 2) + @magicNumber !important;
+}
 
 h6 {
     @height: 24px;
@@ -82,6 +88,7 @@ p {
     @height: 11px;
     .calcMargin(@height);
     margin-top: (@margin / 2) - @magicNumber!important;
+    font-family: @fontFamilyBody;
 }
 
 .footer {
@@ -96,6 +103,10 @@ p {
 
 .byline_img {
     height: 76px;
+}
+
+.about_img img {
+    height: 240px;
 }
 
 //@fontSizeH1: 2.375em;
@@ -121,13 +132,13 @@ p {
 
 //@fontFamilyCambria:         Cambria, Georgia, Times, 'Times New Roman', serif;
 //@fontFamilyTimes:           Times, 'Times New Roman', serif;
-//@fontFamilyGaramond:        Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+@fontFamilyGaramond:        Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
 
 // Sans-serif
 
 //@fontFamilyHelvetica:       Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 //@fontFamilyCalibri:         Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-//@fontFamilyMyriadPro:       MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+@fontFamilyMyriadPro:       MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
 //@fontFamilyHelveticaNeue:   "Helvetica Neue", Helvetica, Arial, sans-serif;
 //@fontFamilyArial:           Arial, sans-serif;
 
@@ -137,8 +148,8 @@ p {
  * Default font-families
  */
 
-//@fontFamilyHeadings:  @fontFamilyCambria;
-//@fontFamilyBody:      @fontFamilyCalibri;
+@fontFamilyHeadings:  @fontFamilyMyriadPro;
+@fontFamilyBody:      @fontFamilyGaramond;
 //@fontFamilyCode:      @fontFamilyCourier;
 
 //@colorH1BorderBottom: #666;
