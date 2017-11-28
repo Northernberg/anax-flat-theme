@@ -1,0 +1,27 @@
+@import url(base.less);
+
+@nav-theme: #E8E8E8;
+
+body {
+    color: #FFFFFF;
+}
+.footer, .footer-column, .navbar2, .inner-wrap-main {
+    background-color: @nav-theme;
+}
+p, a {
+    color: #FFFFFF;
+}
+.footer{
+    border-top:1px solid #FFFFFF;
+}
+.footer-column{
+    border-right:1px solid #FFFFFF;
+
+    &:last-child{
+        border-right: 0;
+    }
+}
+.wrap-all {
+    border: 1px solid black;
+    border-radius: 5px;
+}

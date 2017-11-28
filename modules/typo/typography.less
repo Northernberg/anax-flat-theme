@@ -66,12 +66,6 @@ h2 {
     margin-top: (@margin / 2) - @magicNumber !important;
     padding-bottom: (@margin / 2) !important;
 }
-
-h3 {
-    @height: 24px;
-    .calcMargin(@height);
-    margin-top: (@margin / 2) - @magicNumber!important;
-}
 h4 {
     @height: 24px;
     .calcMargin(@height);
@@ -81,18 +75,7 @@ h4 {
 h6 {
     @height: 24px;
     .calcMargin(@height);
-    margin-top: (@margin / 2) - @magicNumber!important;
-}
-
-p {
-    @height: 11px;
-    .calcMargin(@height);
-    margin-top: (@margin / 2) - @magicNumber!important;
-    font-family: @fontFamilyBody;
-}
-
-.footer {
-    height: 482px;
+    margin-top: (@margin / 2) - @magicNumber + 2px!important;
 }
 
 .rm-small-wrapper {

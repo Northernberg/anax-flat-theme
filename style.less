@@ -1,24 +1,61 @@
 /**
 * Anax Flat theme.
 */
-@import url(modules.less);
+@import url(base.less);
 
+@nav-theme: green;
+@colorH1BorderBottom: #666;
+@colorH2BorderBottom: #999;
+@borderSizeH1: 1px;
+@borderSizeH2: 1px;
 
 
 /** --------------------------------------------------------------
  *  Logo images
  */
-.logo-1 {
-    position: absolute;
-    top: 70px;
-    left: -140px;
-}
 
+h1 {
+     border-bottom: @borderSizeH1 solid @colorH1BorderBottom;
+}
+h2 {
+     border-bottom: @borderSizeH2 solid @colorH2BorderBottom;
+}
+.footer{
+    border-top:1px solid black;
+}
+.footer-column{
+    border-right:1px solid black;
+
+    &:last-child{
+        border-right: 0;
+    }
+}
 .site-logo-text-icon {
     img {
         vertical-align: bottom;
     }
 }
+
+.border (@radius: 0) {
+    border-radius: @radius;
+    border: 1px solid black;
+}
+.navbar2{
+    .border(3px);
+    & li {
+        border-bottom: 1px solid;
+
+    }
+}
+.breadcrumb-list {
+    background-color: whitesmoke;
+}
+
+.footer, .footer-column, .navbar2{
+    background-color: @nav-theme;
+}
+
+
 
 
 @media screen and (max-width: 1400px) {
